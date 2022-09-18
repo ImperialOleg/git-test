@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>I study HTML</title>
+    <meta charset="Utr-8" />
+    <link rel="stylesheet" type="text/css" href="CSS.css" />
+    <script type="text/javascript" src="Script.js"></script>
+  </head>
+  <body>
+    <div id="header">Шапка сайта</div>
+    <div id="menu">Меню</div>
+    <div id="content">
+      Контент
+      <div id="news">Блок новостей</div>
+    </div>
+    <div id="footer">Низ сайта</div>
+    <div onclick="showMessage();">Щелкни меня</div>
+
+    <table>
+      <tr>
+        <td>
+          <div
+            id="red"
+            onClick="message('Вы щелкнули по красному квадратику')"
+            ;
+          ></div>
+        </td>
+        <td>
+          <div
+            id="green"
+            onClick="message('Вы щелкнули по зеленому квадратику')"
+            ;
+          ></div>
+        </td>
+      </tr>
+      <td>
+        <div
+          id="blue"
+          onClick="message('Вы щелкнули по голубому квадратику')"
+          ;
+        ></div>
+      </td>
+    </table>
+    <form name="forma2">
+      <textarea name="desc" cols="45" rows="4"></textarea>
+    </form>
+    <li
+      onmouseover="showDesc(forma2,'Черника — кустарничек высотой 15—30 см. Ветви отходят'+
+    ' от главного стволика под острыми углами.');"
+      onmouseout="delet (forma2);"
+    >
+      Малина
+    </li>
+    <li>Черника</li>
+    <li>Ежевика</li>
+    <form name="forma3">
+      Сторона 1<input type="text" maxlength="8" size="8" name="st1" /> Сторона
+      2<input type="text" maxlength="8" size="8" name="st2" /> Сторона 3<input
+        type="text"
+        maxlength="8"
+        size="8"
+        name="st3"
+      /><br /><br />
+      <input
+        type="button"
+        value="Вычислить"
+        onClick="areaOfTriangle(forma3);"
+      />
+      <input type="reset" value="Отменить" />
+      Результат <input type="text" size="8" maxlength="8" name="res" />
+    </form>
+    <br /><br />
+    <form name="forma4">
+      Значение 1<input type="text" size="8" maxlength="8" name="zn1" /> Значение
+      2<input type="text" size="8" maxlength="8" name="zn2" /> Значение 3<input
+        type="text"
+        size="8"
+        maxlength="8"
+        name="zn3"
+      /><br /><br />
+      <input
+        type="button"
+        value="Максимальное значение"
+        onClick="maxZnach(forma4);"
+      />
+      <input type="text" size="8" maxlength="8" name="res" />
+      <input type="reset" value="Отменить" />
+    </form>
+    Прогноз погоды на какой день Вас интересует:<br /><br />
+    <form name="forma5">
+      <select name="day" size="7">
+        <option value="mon">Понедельник</option>
+        <option value="tue">Вторник</option>
+        <option value="wen">Среда</option>
+        <option value="thu">Четверг</option>
+        <option value="fri">Пятница</option>
+        <option value="sat">Суббота</option>
+        <option value="san">Воскресенье</option>
+      </select>
+      <input type="text" size="15" maxlength="15" name="zn" />
+      <input type="button" value="OK" onClick="Vday(forma5);" /><br /><br />
+      <textarea name="res" cols="35" rows="5" wrap="virtual"></textarea>
+    </form>
+  </body>
+  <form name="forma7">
+    Вас интересует сумма всех чисел от
+    <input type="text" name="a1" size="5" maxlength="5" /> до
+    <input type="text" name="a2" size="5" maxlength="5" />
+    <input type="button" value="Вычислить" onclick="summa(forma7);" /><br />
+    Сумма равна <input type="text" name="result" size="10" maxlength="10" />
+  </form>
+  <form name="forma8">
+    <input type="button" value="Время" onClick="nTime(forma8);" />
+    <input type="text" name="res" size="10" maxlenght="10" />
+  </form>
+</html>

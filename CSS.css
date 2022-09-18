@@ -1,0 +1,70 @@
+#header {
+  background: darkred;
+  width: 600px;
+  height: 100px;
+}
+#menu {
+  background: oldlace;
+  width: 180px;
+  height: 290px;
+  float: left;
+}
+#content {
+  background: oldlace;
+  width: 420px;
+  height: 290px;
+  float: left;
+}
+#footer {
+  background: darkred;
+  width: 600px;
+  height: 25px;
+}
+body {
+  margin: 0px;
+}
+#news {
+  background: yellow;
+  width: 300px;
+  height: 290px;
+  float: right;
+  margin: 10px;
+}
+#green {
+  width: 100px;
+  height: 100px;
+  border: 1px solid red;
+  margin: 5px;
+  padding: 5px;
+  background: yellow;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+
+#spisok1 {
+  list-style-type: decimal;
+}
+#spisok2 {
+  list-style-type: lower-roman;
+}
+#spisok3 {
+  list-style-type: upper-roman;
+}
+
+#red,
+#green,
+#blue {
+  width: 100px;
+  height: 100px;
+  margin: 10px;
+}
+#red {
+  background: red;
+}
+#green {
+  background: green;
+}
+#blue {
+  background: blue;
+}
